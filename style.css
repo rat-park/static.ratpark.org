@@ -444,6 +444,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 .licensing {
   font-size: 1.1rem !important;
   margin-top: 2rem;
+  width: 55%;
 }
 
 .licensing img {
