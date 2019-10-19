@@ -447,11 +447,6 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   width: 55%;
 }
 
-.licensing img {
-  width: 14px;
-  height: 14px;
-}
-
 .theming {
   position: absolute;
   z-index: 100;
