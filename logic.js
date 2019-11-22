@@ -12,8 +12,9 @@ $(document).ready(function() {
   });
 
   var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
-  isDarkMode.addListener(onUpdate);
-  function onUpdate() {
+  isDarkMode.addListener(isDarkModeOnUpdate);
+  isDarkModeOnUpdate();
+  function isDarkModeOnUpdate() {
     if(isDarkMode.matches) {
       ChangeThemeArg('dark');
     } else {
