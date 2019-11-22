@@ -16,9 +16,9 @@ $(document).ready(function() {
   isDarkModeOnUpdate();
   function isDarkModeOnUpdate() {
     if(isDarkMode.matches) {
-      ChangeThemeArg('dark');
+      document.location = '#theme=dark';
     } else {
-      ChangeThemeArg('light');
+      document.location = '#theme=light';
     }
   }
 
