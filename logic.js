@@ -11,6 +11,16 @@ $(document).ready(function() {
     $(this).removeClass('hover')
   });
 
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+  isDarkMode.addListener(onUpdate);
+  function onUpdate() {
+    if(isDarkMode.matches) {
+      ChangeThemeArg('dark');
+    } else {
+      ChangeThemeArg('light');
+    }
+  }
+
 })
 
 function ChangeTheme() {
